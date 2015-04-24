@@ -17,9 +17,9 @@ makeCacheMatrix <- function(x = matrix()){
              getsolve = getsolve)
 }
 
-## cacheSolve takes the makeCacheMatrix list as an input,
-## calculates the inverse if there is nothing in cache
-## references cache if the inverse is present
+# cacheSolve takes the makeCacheMatrix list as inputs,
+# calculates the inverse if there is nothing in cache
+# references cache if the inverse is present
 
 cacheSolve <- function(x, ...) {
         m <- x$getsolve()
@@ -47,7 +47,7 @@ cacheSolve <- function(x, ...) {
 # first run:
 
 # inv<-cacheSolve(x)
-# >inv
+# inv
 # [,1] [,2]
 # [1,]    1   -1
 # [2,]    2   -1
@@ -56,9 +56,9 @@ cacheSolve <- function(x, ...) {
 
 # run again, see if cache is returned
 
-# >inv<-cacheSolve(x)
-# getting cached data
-# > inv
+# inv<-cacheSolve(x)
+# inv
+#getting cached data
 # [,1] [,2]
 # [1,]    1   -1
 # [2,]    2   -1
